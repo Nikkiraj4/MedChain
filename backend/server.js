@@ -6,6 +6,7 @@ require('dotenv').config();
 const authRoutes = require('./routes/authRoutes');
 const testRoutes = require('./routes/testRoutes');
 const adminRoutes = require('./routes/adminRoutes');
+const batchRoutes = require('./routes/batchRoutes');
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(cors());
 app.use('/api/auth', authRoutes);
 app.use('/api/test', testRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/batches', batchRoutes);
 
 // Database Connection
 const PORT = process.env.PORT || 5000;
