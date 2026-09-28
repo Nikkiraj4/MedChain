@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = `${import.meta.env.VITE_API_URL}/api`;
 
 const DISTRIBUTOR_ID = '6ab530a9fbb6673b7dcb2809';
 
